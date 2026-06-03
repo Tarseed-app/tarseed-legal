@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Walleon</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --brand:        #5A8F8A;
+      --brand-light:  #e8f4f3;
+      --text:         #1a1a1a;
+      --text-muted:   #555;
+      --border:       #e5e5e5;
+      --bg:           #ffffff;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --text:        #e8e8e8;
+        --text-muted:  #aaa;
+        --border:      #2e2e2e;
+        --bg:          #111111;
+        --brand-light: #1a2e2d;
+      }
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.75;
+      color: var(--text);
+      background: var(--bg);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .page {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 64px 24px 72px;
+      flex: 1;
+    }
+
+    .header {
+      border-bottom: 3px solid var(--brand);
+      padding-bottom: 24px;
+      margin-bottom: 32px;
+    }
+
+    .wordmark {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--brand);
+      letter-spacing: -0.5px;
+    }
+
+    .tagline {
+      margin-top: 10px;
+      font-size: 1rem;
+      color: var(--text-muted);
+    }
+
+    h2 {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-muted);
+      margin: 36px 0 12px;
+    }
+
+    .link-list {
+      list-style: none;
+      padding: 0;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .link-list li {
+      border-bottom: 1px solid var(--border);
+    }
+
+    .link-list li:last-child {
+      border-bottom: none;
+    }
+
+    .link-list a {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 18px;
+      color: var(--text);
+      text-decoration: none;
+      font-size: 0.95rem;
+      transition: background 0.15s;
+    }
+
+    .link-list a:hover {
+      background: var(--brand-light);
+    }
+
+    .link-list .arrow {
+      color: var(--brand);
+      font-size: 0.85rem;
+      flex-shrink: 0;
+    }
+
+    .contact-row {
+      margin-top: 12px;
+      padding: 14px 18px;
+      background: var(--brand-light);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      font-size: 0.95rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .contact-row span {
+      color: var(--text-muted);
+      font-size: 0.85rem;
+    }
+
+    .contact-row a {
+      color: var(--brand);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .contact-row a:hover {
+      text-decoration: underline;
+    }
+
+    .footer {
+      margin-top: 52px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <div class="header">
+    <div class="wordmark">Walleon</div>
+    <p class="tagline">Walleon is a bilingual personal finance and budget tracker.</p>
+  </div>
+
+  <h2>Legal</h2>
+  <ul class="link-list">
+    <li>
+      <a href="https://walleon.app/privacy">
+        <span>Privacy Policy</span>
+        <span class="arrow">→</span>
+      </a>
+    </li>
+    <li>
+      <a href="https://walleon.app/terms">
+        <span>Terms &amp; Conditions</span>
+        <span class="arrow">→</span>
+      </a>
+    </li>
+    <li>
+      <a href="https://walleon.app/delete-account">
+        <span>Delete Account</span>
+        <span class="arrow">→</span>
+      </a>
+    </li>
+    <li>
+      <a href="https://walleon.app/data-deletion">
+        <span>Data Deletion</span>
+        <span class="arrow">→</span>
+      </a>
+    </li>
+    <li>
+      <a href="https://walleon.app/support">
+        <span>Support</span>
+        <span class="arrow">→</span>
+      </a>
+    </li>
+  </ul>
+
+  <h2>Contact</h2>
+  <div class="contact-row">
+    <span>Support email</span>
+    <a href="mailto:support@walleon.app">support@walleon.app</a>
+  </div>
+
+  <div class="footer">
+    &copy; 2026 Walleon. All rights reserved.
+  </div>
+
+</div>
+</body>
+</html>
