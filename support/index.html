@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Support — Walleon</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --brand:        #5A8F8A;
+      --brand-light:  #e8f4f3;
+      --text:         #1a1a1a;
+      --text-muted:   #555;
+      --border:       #e5e5e5;
+      --bg:           #ffffff;
+      --card-bg:      #f8fafb;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --text:        #e8e8e8;
+        --text-muted:  #aaa;
+        --border:      #2e2e2e;
+        --bg:          #111111;
+        --card-bg:     #1a1a1a;
+        --brand-light: #1a2e2d;
+      }
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.75;
+      color: var(--text);
+      background: var(--bg);
+    }
+
+    .page {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 40px 24px 72px;
+    }
+
+    .header {
+      border-bottom: 3px solid var(--brand);
+      padding-bottom: 20px;
+      margin-bottom: 32px;
+    }
+
+    .header h1 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--brand);
+      margin-bottom: 6px;
+    }
+
+    .header .meta {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    h2 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--brand);
+      margin: 36px 0 10px;
+    }
+
+    p  { margin-bottom: 14px; }
+    ul { padding-left: 22px; margin-bottom: 14px; }
+    li { margin-bottom: 8px; }
+
+    a  { color: var(--brand); text-decoration: none; word-break: break-all; }
+    a:hover { text-decoration: underline; }
+
+    strong { font-weight: 600; }
+
+    .contact-card {
+      background: var(--brand-light);
+      border: 1px solid var(--brand);
+      border-radius: 10px;
+      padding: 20px 24px;
+      margin: 20px 0;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .contact-card .icon {
+      font-size: 1.6rem;
+      flex-shrink: 0;
+    }
+
+    .contact-card .label {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      margin-bottom: 2px;
+    }
+
+    .contact-card .email-link {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--brand);
+    }
+
+    .topic-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .topic-list li {
+      padding: 10px 0;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.95rem;
+    }
+
+    .topic-list li:last-child { border-bottom: none; }
+
+    .topic-list .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--brand);
+      flex-shrink: 0;
+    }
+
+    .footer {
+      margin-top: 52px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .footer a {
+      color: var(--brand);
+      text-decoration: none;
+      font-size: 0.85rem;
+    }
+
+    .footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <div class="header">
+    <h1>Support</h1>
+    <p class="meta"><strong>Walleon</strong> &nbsp;·&nbsp; We're here to help</p>
+  </div>
+
+  <p>
+    Have a question, need help with your account, or want to report an issue?
+    Reach out to the Walleon support team and we'll get back to you as soon as possible.
+  </p>
+
+  <h2>Contact Us</h2>
+
+  <div class="contact-card">
+    <div class="icon">✉</div>
+    <div>
+      <div class="label">Email</div>
+      <a href="mailto:support@walleon.app" class="email-link">support@walleon.app</a>
+    </div>
+  </div>
+
+  <p>
+    Send us an email with a description of your issue and we will respond within
+    <strong>2 business days</strong>.
+  </p>
+
+  <h2>What We Can Help With</h2>
+
+  <ul class="topic-list">
+    <li><span class="dot"></span> Account access, login, or sign-in issues</li>
+    <li><span class="dot"></span> Account deletion or data removal requests</li>
+    <li><span class="dot"></span> Privacy and data handling questions</li>
+    <li><span class="dot"></span> Billing and subscription inquiries</li>
+    <li><span class="dot"></span> Bug reports and unexpected app behaviour</li>
+    <li><span class="dot"></span> General app support and how-to questions</li>
+  </ul>
+
+  <h2>Deletion Requests</h2>
+  <p>
+    To delete your account or specific app data, you can use the in-app option
+    (<strong>Profile → Account Info → Delete Account</strong>) or submit a request by email.
+    See the dedicated pages for full details:
+  </p>
+  <ul>
+    <li><a href="https://walleon.app/delete-account">Account Deletion</a> — permanently close your account and remove all data.</li>
+    <li><a href="https://walleon.app/data-deletion">Data Deletion</a> — remove specific data without closing your account.</li>
+  </ul>
+
+  <div class="footer">
+    <span>Walleon &nbsp;·&nbsp; Support</span>
+    <div style="display:flex;gap:16px;flex-wrap:wrap;">
+      <a href="https://walleon.app/privacy">Privacy Policy</a>
+      <a href="https://walleon.app/terms">Terms &amp; Conditions</a>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
